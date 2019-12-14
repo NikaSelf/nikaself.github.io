@@ -1,0 +1,52 @@
+<html>
+<script src="adder.js" defer></script>
+<script src="sub.js" defer></script>
+<script src="multi.js" defer></script>
+<script src="divi.js" defer></script>
+<link href="calculator.css" rel="stylesheet"/>
+    <header>
+        <h1>Calculator:</h1>
+    </header>
+    <body>
+       <div> <h1>Adding</h1>
+            <input id="num1" type="text" maxlength = "4" size = "4" style="font-size: 1.5em">
+            <h2>&nbsp;&nbsp; + &nbsp;&nbsp;</h2>
+            <input id="num2" type="text" maxlength = "4" size = "4" style="font-size: 1.5em">
+            <br/>
+            <input value=" = " onclick="add()" type="button">
+            <input value="clear" onclick="reset1()" type="button">
+            <h2 id="answer1" > </h2>
+        </div>
+        <div>
+            <h1>Subtracting</h1>
+            <input id="num3" type="text" maxlength = "4" size = "4" style="font-size: 1.5em">
+            <h2>&nbsp;&nbsp; - &nbsp;&nbsp;</h2>
+            <input id="num4" type="text" maxlength = "4" size = "4" style="font-size: 1.5em">
+            <br/>
+            <input value=" = " onclick="sub()" type="button">
+            <input value="clear" onclick="reset2()" type="button">
+            <h2 id="answer2" > </h2>
+        </div>
+        <div>
+            <h1>Multiplying</h1>
+            <input id="num5" type="text" maxlength = "4" size = "4" style="font-size: 1.5em">
+            <h2>&nbsp;&nbsp; x &nbsp;&nbsp;</h2>
+            <input id="num6" type="text" maxlength = "4" size = "4" style="font-size: 1.5em">
+            <br/>
+            <input value=" = " onclick="multi()" type="button">
+            <input value="clear" onclick="reset3()" type="button">
+            <h2 id="answer3" > </h2>
+        </div>
+        <div>
+            <h1>Dividing</h1>
+            <input id="num7" type="text" maxlength = "4" size = "4" style="font-size: 1.5em">
+            <h2>&nbsp;&nbsp; / &nbsp;&nbsp;</h2>
+            <input id="num8" type="text" maxlength = "4" size = "4" style="font-size: 1.5em">
+            <br/>
+            <input value=" = " onclick="divi()" type="button">
+
+            <input value="clear" onclick="reset4()" type="button">
+            <h2 id="answer4" > </h2>
+        </div>
+    </body>
+</html>
